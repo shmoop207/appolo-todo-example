@@ -48,5 +48,4 @@ export class TodoManagers {
     return doc;
 
   }
-
 }
