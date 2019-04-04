@@ -16,10 +16,10 @@
         "cors": "^2.8.5",
         "nunjucks": "^3.2.0",
         "serve": "^11.0.0",
-        "tslib": "^1.9.3",
-
+        "tslib": "^1.9.3"
     },
     "devDependencies": {
+        "bootstrap": "^4.3.1",
         "axios": "^0.16.2",
         "vue": "^2.5.11",
         "vue-axios": "^2.0.2",
