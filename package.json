@@ -1,6 +1,6 @@
 {
     "name": "appolo-todo-example",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "description": "Simple todo application.",
     "main": "app.js",
     "author": "roman svichar",
@@ -9,14 +9,15 @@
         "start": "node app.js"
     },
     "dependencies": {
-        "@appolo/mongo": "0.0.2",
-        "@appolo/validation": "0.0.2",
-        "@appolo/view": "0.0.8",
+        "@appolo/logger": "^1.0.3",
+        "@appolo/mongo": "^0.0.4",
+        "@appolo/validation": "^0.0.2",
+        "@appolo/view": "^0.0.8",
         "appolo": "^6.0.66",
         "body-parser": "^1.18.3",
         "cors": "^2.8.5",
         "nunjucks": "^3.2.0",
-        "serve": "^11.0.0",
+        "serve-static": "^1.13.2",
         "tslib": "^1.9.3"
     },
     "devDependencies": {
@@ -38,7 +39,6 @@
         "typescript": "^3.4.1",
         "vue-loader": "^13.0.5",
         "vue-template-compiler": "^2.4.4",
-        "webpack": "^3.6.0",
-        "webpack-dev-server": "^2.9.1"
+        "webpack": "^3.6.0"
     }
 }
