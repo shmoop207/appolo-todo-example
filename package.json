@@ -5,7 +5,8 @@
     "main": "app.js",
     "author": "roman svichar",
     "scripts": {
-        "build": "webpack"
+        "build": "webpack",
+        "start": "node app.js"
     },
     "dependencies": {
         "@appolo/mongo": "0.0.2",
