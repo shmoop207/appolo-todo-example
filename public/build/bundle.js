@@ -10248,7 +10248,7 @@ module.exports = defaults;
     addTodo(event) {
       if (event) event.preventDefault();
 
-      let url = 'http://localhost:4000/api/add';
+      let url = `${serverURL}/api/add`;
       let param = {
         name: this.todo,
         done: 0
@@ -10838,7 +10838,7 @@ const bus = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a();
 
         fetchTodo() {
 
-            let uri = 'http://localhost:4000/api/all';
+            let uri = `${serverURL}/api/all`;
 
             __WEBPACK_IMPORTED_MODULE_0_axios___default.a.get(uri).then(response => {
 
@@ -10850,7 +10850,7 @@ const bus = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a();
 
             let id = todo._id;
 
-            let uri = 'http://localhost:4000/api/update/' + id;
+            let uri = `${serverURL}/api/update/${id}`;
 
             todo.editing = false;
 
@@ -10859,10 +10859,10 @@ const bus = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a();
 
         deleteTodo(id) {
 
-            let uri = 'http://localhost:4000/api/delete/' + id;
+            let uri = `${serverURL}/api/delete/${id}`;
 
             this.todos = this.todos.filter(function (el) {
-                return el._id != id;
+                return el._id !== id;
             });
 
             __WEBPACK_IMPORTED_MODULE_0_axios___default.a.delete(uri).then(() => {

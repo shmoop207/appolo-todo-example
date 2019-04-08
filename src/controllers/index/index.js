@@ -5,12 +5,15 @@ const appolo_1 = require("appolo");
 const view_1 = require("@appolo/view");
 let Index = class Index {
     index(req, res) {
-        return {};
+        return { serverURL: this.env.serverURL };
     }
 };
 tslib_1.__decorate([
+    appolo_1.inject()
+], Index.prototype, "env", void 0);
+tslib_1.__decorate([
     appolo_1.get("/"),
-    view_1.view("../public/index.html")
+    view_1.view("index.html")
 ], Index.prototype, "index", null);
 Index = tslib_1.__decorate([
     appolo_1.controller()
