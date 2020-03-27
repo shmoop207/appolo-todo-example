@@ -9,23 +9,22 @@
         "start": "node app.js"
     },
     "dependencies": {
-        "@appolo/logger": "^1.0.3",
-        "@appolo/mongo": "^0.0.4",
-        "@appolo/validation": "^0.0.2",
-        "@appolo/view": "^0.0.8",
-        "appolo": "^6.0.66",
-        "body-parser": "^1.18.3",
+        "@appolo/logger": "^7.0.0",
+        "@appolo/mongo": "^7.0.1",
+        "@appolo/validator": "^7.0.4",
+        "@appolo/view": "^7.0.1",
+        "appolo": "^7.0.2",
+        "body-parser": "^1.19.0",
         "cors": "^2.8.5",
-        "nunjucks": "^3.2.0",
-        "serve-static": "^1.13.2",
-        "tslib": "^1.9.3"
+        "nunjucks": "^3.2.1",
+        "serve-static": "^1.14.1",
+        "tslib": "^1.11.1"
     },
     "devDependencies": {
         "bootstrap": "^4.3.1",
         "axios": "^0.16.2",
         "vue": "^2.5.11",
         "vue-axios": "^2.0.2",
-        "@types/joi": "^14.3.2",
         "@types/mongoose": "^5.3.24",
         "@types/node": "^11.13.0",
         "babel-core": "^6.26.0",

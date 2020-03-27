@@ -32,7 +32,8 @@ let TodoManagers = class TodoManagers {
     }
 };
 tslib_1.__decorate([
-    mongo_1.injectModel(todo_1.Todo)
+    mongo_1.injectModel(todo_1.Todo),
+    tslib_1.__metadata("design:type", Object)
 ], TodoManagers.prototype, "model", void 0);
 TodoManagers = tslib_1.__decorate([
     appolo_1.define(),

@@ -1,12 +1,12 @@
-import {joi,param} from '@appolo/validation';
+import { string,boolean } from "@appolo/validator";
 
 export class TodoUpdateModel {
-  @param(joi.string().required())
+  @string().required()
   name: string;
 
-  @param(joi.string().required())
+  @string().required()
   id: string;
 
-  @param(joi.bool().required())
+  @boolean().required()
   done: boolean;
 }

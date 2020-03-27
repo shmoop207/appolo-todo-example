@@ -9,11 +9,15 @@ let Index = class Index {
     }
 };
 tslib_1.__decorate([
-    appolo_1.inject()
+    appolo_1.inject(),
+    tslib_1.__metadata("design:type", Object)
 ], Index.prototype, "env", void 0);
 tslib_1.__decorate([
     appolo_1.get("/"),
-    view_1.view("index.html")
+    view_1.view("index.html"),
+    tslib_1.__metadata("design:type", Function),
+    tslib_1.__metadata("design:paramtypes", [Object, Object]),
+    tslib_1.__metadata("design:returntype", void 0)
 ], Index.prototype, "index", null);
 Index = tslib_1.__decorate([
     appolo_1.controller()

@@ -1,6 +1,6 @@
-import {joi,param} from '@appolo/validation';
+import { string,boolean,array } from "appolo-validator";
 
 export class TodoCreateModel {
-  @param(joi.string().required())
+  @string().required()
   name: string;
 }
