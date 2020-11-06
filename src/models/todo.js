@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Todo = void 0;
 const tslib_1 = require("tslib");
 const mongo_1 = require("@appolo/mongo");
 let Todo = class Todo extends mongo_1.Schema {

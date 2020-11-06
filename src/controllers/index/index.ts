@@ -1,4 +1,5 @@
-import { controller, inject, singleton, get, IRequest, IResponse } from "appolo";
+import { controller, get, IRequest, IResponse } from "@appolo/route";
+import { inject, singleton, } from "@appolo/inject";
 import { view } from "@appolo/view";
 import { IEnv } from "../../../config/env/IEnv";
 

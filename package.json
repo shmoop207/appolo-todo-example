@@ -9,16 +9,16 @@
         "start": "node app.js"
     },
     "dependencies": {
-        "@appolo/logger": "^7.0.0",
-        "@appolo/mongo": "^7.0.1",
-        "@appolo/validator": "^7.0.4",
-        "@appolo/view": "^7.0.1",
-        "appolo": "^7.0.2",
+        "@appolo/core": "^8.0.5",
+        "@appolo/logger": "^8.0.4",
+        "@appolo/mongo": "^8.0.0",
+        "@appolo/validator": "^8.0.0",
+        "@appolo/view": "^8.0.1",
         "body-parser": "^1.19.0",
         "cors": "^2.8.5",
-        "nunjucks": "^3.2.1",
+        "nunjucks": "^3.2.2",
         "serve-static": "^1.14.1",
-        "tslib": "^1.11.1"
+        "tslib": "^2.0.3"
     },
     "devDependencies": {
         "bootstrap": "^4.3.1",

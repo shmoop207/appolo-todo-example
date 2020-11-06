@@ -1,4 +1,5 @@
-import { controller, inject, post, get, IRequest, IResponse, del, patch, model } from "appolo";
+import { controller, post, get, IRequest, IResponse, del, patch, model } from "@appolo/route";
+import { inject } from "@appolo/inject";
 import { TodoManagers } from "../../managers/todoManagers";
 import { validate, string } from "@appolo/validator";
 import { TodoCreateModel } from "./todoCreateModel";
