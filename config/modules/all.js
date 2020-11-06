@@ -4,7 +4,7 @@ const view_1 = require("@appolo/view");
 const validator_1 = require("@appolo/validator");
 const logger_1 = require("@appolo/logger");
 module.exports = async function (app, env) {
-    await app.module(logger_1.LoggerModule);
-    await app.module(view_1.ViewModule.for({ viewEngine: view_1.ViewEngines.nunjucks }), validator_1.ValidationModule, mongo_1.MongoModule.for({ connection: env.mongo }));
+    await app.module.load(logger_1.LoggerModule);
+    await app.module.use(view_1.ViewModule.for({ viewEngine: view_1.ViewEngines.nunjucks }), validator_1.ValidationModule, mongo_1.MongoModule.for({ connection: env.mongo }));
 };
 //# sourceMappingURL=all.js.map

@@ -1,12 +1,12 @@
-import { define, inject, singleton } from "appolo";
-import { Model, injectModel, Doc } from "@appolo/mongo";
+import { define, inject, singleton } from "@appolo/inject";
+import { Model, model, Doc } from "@appolo/mongo";
 import { Todo } from "../models/todo";
 
 @define()
 @singleton()
 export class TodoManagers {
 
-  @injectModel(Todo) model: Model<Todo>;
+  @model(Todo) model: Model<Todo>;
 
   public getAll(): Promise<Doc<Todo>[]> {
 

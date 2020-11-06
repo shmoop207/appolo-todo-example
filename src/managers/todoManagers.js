@@ -1,7 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.TodoManagers = void 0;
 const tslib_1 = require("tslib");
-const appolo_1 = require("appolo");
+const inject_1 = require("@appolo/inject");
 const mongo_1 = require("@appolo/mongo");
 const todo_1 = require("../models/todo");
 let TodoManagers = class TodoManagers {
@@ -32,12 +33,12 @@ let TodoManagers = class TodoManagers {
     }
 };
 tslib_1.__decorate([
-    mongo_1.injectModel(todo_1.Todo),
+    mongo_1.model(todo_1.Todo),
     tslib_1.__metadata("design:type", Object)
 ], TodoManagers.prototype, "model", void 0);
 TodoManagers = tslib_1.__decorate([
-    appolo_1.define(),
-    appolo_1.singleton()
+    inject_1.define(),
+    inject_1.singleton()
 ], TodoManagers);
 exports.TodoManagers = TodoManagers;
 //# sourceMappingURL=todoManagers.js.map
