@@ -1,0 +1,43 @@
+{
+    "name": "appolo-todo-example",
+    "version": "0.0.1",
+    "description": "Simple todo application.",
+    "main": "app.js",
+    "author": "roman svichar",
+    "scripts": {
+        "build": "webpack",
+        "start": "node app.js"
+    },
+    "dependencies": {
+        "@appolo/logger": "^7.0.0",
+        "@appolo/mongo": "^7.0.1",
+        "@appolo/validator": "^7.0.4",
+        "@appolo/view": "^7.0.1",
+        "appolo": "^7.0.2",
+        "body-parser": "^1.19.0",
+        "cors": "^2.8.5",
+        "nunjucks": "^3.2.1",
+        "serve-static": "^1.14.1",
+        "tslib": "^1.11.1"
+    },
+    "devDependencies": {
+        "bootstrap": "^4.3.1",
+        "axios": "^0.16.2",
+        "vue": "^2.5.11",
+        "vue-axios": "^2.0.2",
+        "@types/mongoose": "^5.3.24",
+        "@types/node": "^11.13.0",
+        "babel-core": "^6.26.0",
+        "babel-loader": "^7.1.2",
+        "babel-preset-env": "^1.6.0",
+        "babel-preset-stage-3": "^6.24.1",
+        "cross-env": "^5.0.5",
+        "css-loader": "^0.28.7",
+        "file-loader": "^1.1.4",
+        "prettier": "^1.9.2",
+        "typescript": "^3.4.1",
+        "vue-loader": "^13.0.5",
+        "vue-template-compiler": "^2.4.4",
+        "webpack": "^3.6.0"
+    }
+}
